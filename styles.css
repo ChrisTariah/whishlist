@@ -294,9 +294,9 @@ dt {
     .flower {
         display: none;
     }
-    #second-passage {
+   /* #second-passage {
         grid-template-columns: 1fr 1fr;
-    }
+    } */
 }
 
 .gift-img{
