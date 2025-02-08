@@ -257,7 +257,7 @@ dt {
 }
 
 /* Responsive Adjustments */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     nav {
         position: static;
         flex-direction: row;
