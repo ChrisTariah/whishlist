@@ -1,0 +1,337 @@
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --nav-color: #0C1844;
+    --page-color: #FFF5E1;
+    --color-3: #C80036;
+    --color-4: #FF6969;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--page-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height:100%;
+    position: fixed;
+    background-color: var(--nav-color);
+    width: 30%;
+    left: -25%;
+    transition: 0.3s ease;
+    top:0;
+    bottom: 0;
+    align-items: center;
+    padding-top:100px;
+    border-radius: 0 15px 15px 0;
+    z-index: 2;
+}
+
+nav:hover {
+    left: 0;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 30px;
+    padding:40px 23px 0 0;
+    font-family: "Gotu", serif;
+    font-size: 1rem;
+    color: var(--page-color);
+}
+nav > h1{
+    font-family:"Sacramento", serif; 
+    font-weight: 500;
+    font-size: 2.8rem;
+    color: var(--page-color);
+}
+#nav-span{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--color-3);
+}
+a, a:visited,a:active{
+    font-family: "Gotu", serif;
+    font-size: 1.2rem;
+    color: var(--color-3);
+    text-decoration: none;
+}
+a:hover{
+    color:var(--color-4);
+}
+.nav-link,
+.nav-link:visited,
+.nav-link:active {
+    font-family: "Gotu", serif;
+    font-size: 1rem;
+    color: var(--page-color);
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: var(--page-color);
+    text-decoration: underline;
+    text-decoration-color: var(--color-3);
+}
+
+.flower{
+    padding-top: 100px;
+}
+
+.star{
+    width:10%;
+    aspect-ratio:1;
+    background: var(--nav-color);
+    clip-path:polygon(50% 0,
+    calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+    calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+   );  
+   margin: 20px auto;
+
+}
+
+/* Responsive Layout for Main Content */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 1fr 9fr 1fr;
+        padding-left: 80px;
+    }
+}
+
+section {
+    border: 0.1px solid var(--color-4);
+    padding: 10px;
+    top:0;
+    bottom: 0;
+}
+
+#first-passage {
+    padding: 20px;
+    max-width: 800px;
+    margin: 80px auto;
+    text-align: justify;
+    border: 0.5px dashed var(--color-4);
+    border-radius: 10px;
+}
+#dislike {
+    padding: 20px;
+    max-width: 800px;
+    margin: 120px auto;
+    text-align: justify;
+    border: 0.5px dashed var(--color-4);
+    border-radius: 10px;
+}
+
+h1 {
+    color: var(--nav-color);
+    font-family: "Sacramento", serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h1:hover {
+    font-size: 2.2rem;
+}
+
+p {
+    font-family: "Gotu", serif;
+    font-size: 1.2rem;
+    line-height: 2.0rem;
+}
+li{
+    font-family: "Gotu", serif;
+    font-size: 1.2rem;
+    line-height: 2.0rem;
+}
+
+
+/* Marquee */
+.marquee {
+    overflow: hidden;
+    user-select: none;
+    height: 60px;
+    display: flex;
+}
+
+.marquee-content {
+    white-space: nowrap;
+    display: inline-block;
+    animation: scroll-left 10s linear infinite;
+    color: var(--color-3);
+    font-family: "Sacramento", serif;
+    font-size: 1.8rem;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Fancy Items Grid */
+#second-passage {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.fancy-item {
+    border: 1px dashed var(--color-4);
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.fancy-item:hover .overlay {
+    opacity: 1;
+}
+
+.fancy-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: rgba(255, 105, 105, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-text {
+    color: var(--nav-color);
+    font-family: "Gotu", serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* Descriptions */
+dl {
+    text-align: center;
+    font-family: 'Gotu', serif;
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+
+dt {
+    color: var(--color-3);
+    text-decoration: underline wavy  var(--nav-color) 2px;
+    font-size: 1.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    nav {
+        position: static;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        height:60px;
+        padding: 10px 20px;
+        border-radius: 0;
+        transition: none; /* Remove transitions for smaller screens */
+        left: 0;
+        right: 0;
+        position: sticky;
+    }
+    .flower{
+        display: none;
+    }
+
+    nav > h1{
+        font-family:"Sacramento", serif; 
+        font-weight: 500;
+        font-size: 1.8rem;
+        color: var(--page-color);
+        padding-right: 60px;
+    }
+    #nav-span{
+        display: inline;
+        font-size: 1.8rem;
+        color: var(--color-3);
+        padding-left: 5px;
+    
+    }
+
+    nav > ul {
+        color: var(--page-color);
+        flex-direction: row;
+        gap: 30px;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav:hover {
+        left: auto; /* Disable hover effect on smaller screens */
+    }
+
+    #second-passage {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.gift-img{
+    width:60%;
+    height:auto;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+#gift-list{
+    text-align: center;
+    margin: 60px auto 0;
+}
+#gift-list > li{
+    list-style: none;
+    margin-top: 30px;
+}
+ span{
+    color:var(--color-3);
+    text-decoration: underline wavy  var(--nav-color) 2px;
+}
+.gift-header{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2.0rem;
+    font-family: "Sacramento", serif;
+    color: var(--nav-color);
+    text-decoration: double  var(--color-4) 2px;
+}
