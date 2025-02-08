@@ -119,6 +119,7 @@ main {
     main {
         grid-template-columns: 1fr 9fr 1fr;
         padding-left: 80px;
+        width:50%;
     }
 }
 
