@@ -1,106 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Christie's Whishlist</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Gotu&family=Sacramento&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <nav>
-        <div class="sparkle"></div>
-        <h1>Christie's <span id="nav-span"> wishlist</span></h1>
-      
-        <ul>
-            <li><a class="nav-link" href="index.html"> Home</a></li>
-            <li><a class="nav-link" href="#first-passage"> About</a></li>
-            <li><a class="nav-link"href="#likes">Likes</a></li>
-            <li><a class="nav-link"href="#dislike">Dislikes</a></li>
-        </ul>
-        <img src="flower-bouquet.png" alt="flowers" class="flower">
-    </nav>
-    
-    <main>
-      <section id="first"></section>
-      <section id="second">
-        <div class='star'></div>
-        <div id="first-passage">
-          <h1>CouCou Mes Amis</h1>
-          <p>This website is a place where you can find out what Christie would like as gifts. If you are a stranger 
-            you can just look through you might find what you like as a gift for yourself,
-            but if you are a family member of mine, <span>especially my sisters</span>, I
-             would be expecting one of these, because I sent this website to every family member.
-          </p>
-          <p>If you do not get me one of these it means,</p>
-          <ul>
-            <li>You didn't just bother to click on the link I sent you</li>
-            <li>Even worse, you ignored the message i sent you</li>
-            <li>You have a better idea for a gift(which is highly unlikey).</li>
-        
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christie's Wishlist</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- TOP NAV -->
+  <nav class="topnav">
+    <a href="index.html" class="topnav-logo">Christie's Wishlist</a>
+    <ul class="topnav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="God.html">✝️ God</a></li>
+      <li><a href="fashion.html">👗 Fashion</a></li>
+      <li><a href="pilates.html">🧘🏾‍♀️ Pilates</a></li>
+      <li><a href="cosmetics.html">💄 Cosmetics</a></li>
+      <li><a href="jewelry.html">💍 Jewelry</a></li>
+      <li><a href="book.html">📚 Books</a></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE DRAWER -->
+  <div class="nav-drawer" id="drawer">
+    <button class="nav-drawer-close" id="drawer-close">✕</button>
+    <a href="index.html" class="active">🏠 Home</a>
+    <a href="God.html">✝️ God</a>
+    <a href="fashion.html">👗 Fashion</a>
+    <a href="pilates.html">🧘🏾‍♀️ Pilates</a>
+    <a href="cosmetics.html">💄 Cosmetics</a>
+    <a href="jewelry.html">💍 Jewelry</a>
+    <a href="book.html">📚 Books</a>
+  </div>
+
+  <!-- MARQUEE -->
+  <div class="marquee-band">
+    <div class="marquee-track">
+      <span class="marquee-text">✦ Christie is born on Christmas day — absolutely buy her two gifts xx</span>
+      <span class="marquee-text">✦ Christie is born on Christmas day — absolutely buy her two gifts xx</span>
+      <span class="marquee-text">✦ Christie is born on Christmas day — absolutely buy her two gifts xx</span>
+      <span class="marquee-text">✦ Christie is born on Christmas day — absolutely buy her two gifts xx</span>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div class="page">
+    <div class="home-hero">
+      <div class="home-hero-left">
+        <p class="eyebrow">Welcome · Christie's Wishlist</p>
+        <h1 class="display-title">CouCou,<br><em>Mes Amis</em> 👋🏾</h1>
+        <p class="lead" style="margin-top:20px;">A carefully curated list of everything Christie actually wants. If you received this link, consider yourself chosen — and expected to act on it.</p>
+      </div>
+      <div class="home-hero-right">
+        <div class="note-card">
+          <strong>Before you buy anything…</strong>
+          If you do not get me something from this list, it means:
+          <ul class="bullet-list">
+            <li>You didn't bother to click the link I sent you</li>
+            <li>Even worse — you ignored my message entirely</li>
+            <li>You think you have a better idea (you don't)</li>
           </ul>
         </div>
-        <div class="marquee">
-          <p class="marquee-content">Christie is born on Christmas day, absolutely buy her two gifts xx</p>   
+      </div>
+    </div>
+
+    <!-- CATEGORIES -->
+    <div class="cat-section">
+      <div class="section-header">
+        <p class="eyebrow">Browse the list</p>
+        <h2>What I Fancy</h2>
+      </div>
+      <div class="cat-grid">
+        <a href="God.html" class="cat-card">
+          <span class="cat-emoji">✝️</span>
+          <span class="cat-title">God</span>
+          <span class="cat-desc">The most important thing in my life. Faith-first gifting always.</span>
+        </a>
+        <a href="fashion.html" class="cat-card">
+          <span class="cat-emoji">👗</span>
+          <span class="cat-title">Fashion</span>
+          <span class="cat-desc">Early 2000s model off-duty. Classy, unique, timeless pieces only.</span>
+        </a>
+        <a href="pilates.html" class="cat-card">
+          <span class="cat-emoji">🧘🏾‍♀️</span>
+          <span class="cat-title">Pilates</span>
+          <span class="cat-desc">Future certified instructor. Fitness gear and activewear I'll actually use.</span>
+        </a>
+        <a href="cosmetics.html" class="cat-card">
+          <span class="cat-emoji">💄</span>
+          <span class="cat-title">Cosmetics</span>
+          <span class="cat-desc">Clean girl era. Feminine scents and minimal beauty that feels considered.</span>
+        </a>
+        <a href="jewelry.html" class="cat-card">
+          <span class="cat-emoji">💍</span>
+          <span class="cat-title">Jewelry</span>
+          <span class="cat-desc">Unique, vintage and classic. I want my jewelry to be as memorable as a scent.</span>
+        </a>
+        <a href="book.html" class="cat-card">
+          <span class="cat-emoji">📚</span>
+          <span class="cat-title">Books</span>
+          <span class="cat-desc">Fantasy romance, mystery, planners, board games — all of it.</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- DON'T LIST -->
+    <div class="dont-section">
+      <div class="section-header">
+        <p class="eyebrow">Important notice</p>
+        <h2>Do <em style="font-family:'Cormorant Garamond',serif;font-style:italic;">Not</em> Get Me…</h2>
+      </div>
+      <div class="dont-grid">
+        <div class="dont-card">
+          <div class="dont-icon">🏠</div>
+          <p class="dont-title">Household Items</p>
+          <p class="dont-note">I live in a very tiny studio with my sister. There is simply no room. Please.</p>
         </div>
-        <h1 id="likes" style="padding-top:45px;">What I Fancy</h1>
-        <div id="second-passage">
-          <div class="fancy-item">
-            <img src="sky.png" alt="My Saviour" class="fancy-image">
-            <div class="overlay">
-              <div class="overlay-text"><a href="God.html">God</a></div>
-            </div>
-          </div>
-          <div class="fancy-item">
-            <img src="woman.png" alt="Fashion" class="fancy-image">
-            <div class="overlay">
-              <div class="overlay-text"><a href="fashion.html">Fashion</a></div>
-            </div>
-          </div>
-         <div class="fancy-item">
-          <img src="yoga.png" alt="Pilates" class="fancy-image">
-          <div class="overlay">
-            <div class="overlay-text"><a href="pilates.html">Pilates</a></div>
-          </div>
-         </div>
-         <div class="fancy-item">
-          <img src="scent.png" alt="Scents" class="fancy-image">
-          <div class="overlay">
-            <div class="overlay-text"><a href="cosmetics.html">Cosmetics</a></div>
-          </div>
-         </div>
-         <div class="fancy-item">
-          <img src="necklace.png" alt="baking" class="fancy-image">
-          <div class="overlay">
-            <div class="overlay-text"><a href="jewelry.html">Jewelry</a></div>
-          </div>
-         </div>
-         <div class="fancy-item">
-          <img src="book.png" alt="books" class="fancy-image">
-          <div class="overlay">
-            <div class="overlay-text"><a href="book.html">Books</a></div>
-          </div>
-         </div>
+        <div class="dont-card">
+          <div class="dont-icon">🌸</div>
+          <p class="dont-title">Flowers</p>
+          <p class="dont-note">They spoil, they're sticky, they attract insects, and they smell. Hard no.</p>
+        </div>
+        <div class="dont-card">
+          <div class="dont-icon">🤔</div>
+          <p class="dont-title">Thoughtless Stuff</p>
+          <p class="dont-note">A plain water bottle. A generic notebook. If there's no thought behind it, I genuinely don't want it.</p>
+        </div>
       </div>
-     
-      <div id="dislike">
-        <h1>Do not get me..</h1>
-        <dl>
-          <dt>House hold items</dt>
-          <dd>I live in a very tiny studio space with my sister so..</dd>
-          <dt>Flowers</dt>
-          <dd>They will spoil , they are sticky,attract insects, and smell</dd>
-          <dt>Random stuff</dt>
-          <dd>Basically any thoughtless basic gift like a waterbottle, or notebook ( if they are not unique "forget it" )</dd>
-        </dl>
-        
-      </div>
-      </section>
-      <section id="third"></section>
-    </main>
-    <script src="index.js"></script>
-  </body>
+    </div>
+  </div>
+
+  <footer>
+    <span class="footer-logo">Christie's Wishlist</span>
+    <span class="footer-note">Born on Christmas · Expecting two gifts</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>

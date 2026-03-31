@@ -1,58 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Christie's Fashion Update</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Gotu&family=Sacramento&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <nav>
-        <div class="sparkle"></div>
-        <h1>Christie's<span class="nav-span"> wishlist</span></h1>
-      
-        <ul> 
-          <li><a class="nav-link" href="index.html"> Home</a></li>
-          <li><a class="nav-link" href="#first-passage"> About</a></li>
-          <li><a class="nav-link"href="#likes">Likes</a></li>
-          <li><a class="nav-link"href="#dislike">Dislikes</a></li>
-        </ul>
-        <img src="flower-bouquet.png" alt="flowers" class="flower">
-    </nav>
-    
-    <main>
-      <section id="first"></section>
-      <section id="second">
-        <div class='star'></div>
-        <div id="first-passage">
-          <h1>Fashion</h1>
-          <p>My personal style can be described as early 2000's model off duty chic, classy babe look, like <span>Carolyn Bessette-Kennedy, </span> mixed with <span>Charlotte York</span>.So im my wardrobe I want 
-            ~ Unique one of a kind pieces ~ Classy staples ~Perfect fitting pants ~ Chic classy dressses ~ Perfect fit sweaters.
-          </p>
-          <p class="gift-header">My Fashion Wishlist Right Now</p>
-           <ul id="gift-list">
-            <li>Trench Coat ~ Mango</li>
-            <img class="gift-img"src="trenchcoat.jpeg" alt="Mango Trench Coat">
-            <li> Sweater ~ Jaded Ldn</li>
-            <img class="gift-img" src="jaded.jpeg" alt="Jaded Ldn Jersey Sweater">
-            <li> Sweater ~ Jaded Ldn</li>
-            <img class="gift-img" src="jaded2.jpeg" alt="Jaded Ldn Zip Up Sweater">
-            <li>Penny Loafers ~ Charles and Keith</li>
-            <img class="gift-img" src="loafers.jpeg" alt="Cahrles & Keith Penny Loafers">
-            <li> Killshot 2 PRM Sneakers - Nike</li>
-            <img class="gift-img" src="nike.jpeg" alt="Nike Killshots 2 PRM">
-            <li> Antropologie bag</li>
-            <img class="gift-img" src="bag.jpeg" alt="Antropology Love Knot Slouchy Bag">
-           </ul>
-        </div>
-        <div class='star'></div>
-      </section>
-      <section id="third"></section>
-    </main>
-    <script src="index.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christie's Wishlist — Fashion</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="topnav">
+    <a href="index.html" class="topnav-logo">Christie's Wishlist</a>
+    <ul class="topnav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="God.html">✝️ God</a></li>
+      <li><a href="fashion.html" class="active">👗 Fashion</a></li>
+      <li><a href="pilates.html">🧘🏾‍♀️ Pilates</a></li>
+      <li><a href="cosmetics.html">💄 Cosmetics</a></li>
+      <li><a href="jewelry.html">💍 Jewelry</a></li>
+      <li><a href="book.html">📚 Books</a></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+
+  <div class="nav-drawer" id="drawer">
+    <button class="nav-drawer-close" id="drawer-close">✕</button>
+    <a href="index.html">🏠 Home</a>
+    <a href="God.html">✝️ God</a>
+    <a href="fashion.html" class="active">👗 Fashion</a>
+    <a href="pilates.html">🧘🏾‍♀️ Pilates</a>
+    <a href="cosmetics.html">💄 Cosmetics</a>
+    <a href="jewelry.html">💍 Jewelry</a>
+    <a href="book.html">📚 Books</a>
+  </div>
+
+  <div class="subpage-hero">
+    <p class="eyebrow">Category 02 · Style</p>
+    <h1>Fashion 👗</h1>
+    <p class="lead">Early 2000s model off-duty. Carolyn Bessette-Kennedy meets Charlotte York. Classy, unique, timeless.</p>
+  </div>
+
+  <div class="page">
+    <div class="prose">
+      <p>My personal style is <mark>classy, unique and timeless</mark>. In my wardrobe I want: unique one-of-a-kind pieces, perfect-fitting trousers, chic dresses, and sweaters that actually fit. Think early 2000s model off-duty — effortless but thoroughly considered.</p>
+    </div>
+
+    <div class="gifts">
+      <h2>My Fashion Wishlist Right Now</h2>
+      <ul class="gift-grid">
+        <li class="gift-card">
+          <img src="trenchcoat.jpeg" alt="Mango Trench Coat" class="gift-img">
+          <div class="gift-body"><p class="gift-name">Trench Coat</p><p class="gift-store">Mango</p></div>
+        </li>
+        <li class="gift-card">
+          <img src="jaded.jpeg" alt="Jersey Sweater" class="gift-img">
+          <div class="gift-body"><p class="gift-name">Jersey Sweater</p><p class="gift-store">Jaded Ldn</p></div>
+        </li>
+        <li class="gift-card">
+          <img src="jaded2.jpeg" alt="Zip Up Sweater" class="gift-img">
+          <div class="gift-body"><p class="gift-name">Zip Up Sweater</p><p class="gift-store">Jaded Ldn</p></div>
+        </li>
+        <li class="gift-card">
+          <img src="loafers.jpeg" alt="Penny Loafers" class="gift-img">
+          <div class="gift-body"><p class="gift-name">Penny Loafers</p><p class="gift-store">Charles & Keith</p></div>
+        </li>
+        <li class="gift-card">
+          <img src="nike.jpeg" alt="Nike Killshot 2 PRM" class="gift-img">
+          <div class="gift-body"><p class="gift-name">Killshot 2 PRM</p><p class="gift-store">Nike</p></div>
+        </li>
+        <li class="gift-card">
+          <img src="bag.jpeg" alt="Love Knot Slouchy Bag" class="gift-img">
+          <div class="gift-body"><p class="gift-name">Love Knot Slouchy Bag</p><p class="gift-store">Anthropologie</p></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <span class="footer-logo">Christie's Wishlist</span>
+    <span class="footer-note">Born on Christmas · Expecting two gifts</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
 </html>
